@@ -5,7 +5,7 @@
   --text: #0f172a;
   --text-soft: #475569;
   --border: #dbe3ee;
-  --accent: #1d4ed8;
+  --accent: #2563eb;
   --shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
   --shadow-hover: 0 14px 32px rgba(15, 23, 42, 0.1);
   --radius: 18px;
@@ -62,20 +62,20 @@ a:hover {
   max-width: 760px;
 }
 
-.nameplate {
-  margin: 0 0 0.5rem;
-  font-size: 0.95rem;
+.eyebrow {
+  margin: 0 0 0.35rem;
+  font-size: 0.9rem;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-soft);
 }
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(2.2rem, 4vw, 3.4rem);
-  line-height: 1.08;
-  letter-spacing: -0.03em;
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
   font-weight: 800;
   color: var(--text);
 }
@@ -167,24 +167,20 @@ a:hover {
   margin-top: 0.7rem;
 }
 
-/* Certifications */
-#certifications .section-heading h2 {
-  text-align: center;
-}
-
 .cert-grid {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1.5rem;
   flex-wrap: wrap;
   margin-top: 0.5rem;
 }
 
 .cert-card {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.75rem;
+  padding: 0.25rem;
   background: transparent;
   border: none;
   box-shadow: none;
@@ -193,13 +189,12 @@ a:hover {
 
 .cert-card:hover {
   transform: translateY(-2px);
-  box-shadow: none;
   text-decoration: none;
 }
 
 .cert-image-wrap {
-  width: 72px;
-  height: 72px;
+  width: 104px;
+  height: 104px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,7 +206,6 @@ a:hover {
   object-fit: contain;
 }
 
-/* Skills */
 .skill-card h3 {
   margin-bottom: 1rem;
 }
@@ -235,7 +229,6 @@ a:hover {
   font-weight: 600;
 }
 
-/* Contact */
 .contact-card {
   text-align: center;
 }
@@ -248,13 +241,13 @@ a:hover {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin: 1.25rem 0;
+  margin: 1.25rem 0 0;
   flex-wrap: wrap;
 }
 
 .contact-icon {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -276,12 +269,8 @@ a:hover {
   object-fit: contain;
 }
 
-.contact-text {
-  margin: 0.5rem 0 0.5rem;
-}
-
 .phone {
-  margin: 0;
+  margin: 1rem 0 0;
   font-weight: 600;
   color: var(--text);
 }
@@ -313,13 +302,17 @@ a:hover {
     padding: 1.2rem;
   }
 
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+
   .cert-image-wrap {
-    width: 64px;
-    height: 64px;
+    width: 88px;
+    height: 88px;
   }
 
   .contact-icon {
-    width: 34px;
-    height: 34px;
+    width: 30px;
+    height: 30px;
   }
 }
