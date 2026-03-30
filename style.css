@@ -1,19 +1,18 @@
 :root {
-  --bg: #f5f7fb;
-  --surface: #ffffff;
-  --surface-muted: #f8fafc;
-  --border: #d8e0ea;
-  --border-strong: #c7d2df;
-  --text: #16202b;
-  --text-soft: #526171;
-  --text-muted: #6b7a8c;
-  --accent: #1f4f8f;
-  --accent-soft: #eaf1fb;
-  --shadow-sm: 0 6px 18px rgba(15, 23, 42, 0.04);
-  --shadow-md: 0 14px 34px rgba(15, 23, 42, 0.07);
+  --bg: #f4f1ea;
+  --surface: #fffdf9;
+  --surface-alt: #ede7dc;
+  --border: #d7cfc1;
+  --border-strong: #c7bba8;
+  --text: #1f1d19;
+  --text-soft: #5f574d;
+  --text-muted: #7b7267;
+  --accent: #6a4b3a;
+  --accent-soft: #efe1d6;
+  --shadow-sm: 0 6px 18px rgba(31, 29, 25, 0.05);
+  --shadow-md: 0 14px 32px rgba(31, 29, 25, 0.08);
   --radius-lg: 18px;
   --radius-md: 14px;
-  --radius-sm: 10px;
   --max-width: 1100px;
   --max-width-narrow: 860px;
 }
@@ -30,8 +29,7 @@ html {
 
 body {
   margin: 0;
-  background:
-    linear-gradient(180deg, #fbfcfe 0%, var(--bg) 100%);
+  background: linear-gradient(180deg, #faf8f4 0%, var(--bg) 100%);
   color: var(--text);
   font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.7;
@@ -52,7 +50,7 @@ a {
 }
 
 a:hover {
-  color: #163d6f;
+  color: #4f372b;
 }
 
 .container {
@@ -64,12 +62,11 @@ a:hover {
   max-width: var(--max-width-narrow);
 }
 
-/* Hero */
 .hero {
-  padding: 5.5rem 0 4rem;
+  padding: 5.25rem 0 3.75rem;
   background:
-    radial-gradient(circle at top center, rgba(31, 79, 143, 0.08), transparent 42%),
-    linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+    radial-gradient(circle at top center, rgba(106, 75, 58, 0.08), transparent 42%),
+    linear-gradient(180deg, #fffdfa 0%, #f6f1e8 100%);
   border-bottom: 1px solid var(--border);
 }
 
@@ -79,15 +76,15 @@ a:hover {
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(2.9rem, 5vw, 4.6rem);
+  font-size: clamp(3rem, 5vw, 4.7rem);
   line-height: 1.02;
   letter-spacing: -0.04em;
   font-weight: 800;
-  color: #0f1720;
+  color: #181612;
 }
 
 .eyebrow {
-  margin: 0.8rem 0 0;
+  margin: 0.7rem 0 0;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -102,16 +99,14 @@ a:hover {
   color: var(--text-soft);
 }
 
-/* Section layout */
 .section {
   padding: 4rem 0;
 }
 
 .section-alt {
-  background:
-    linear-gradient(180deg, #f7f9fc 0%, #eef3f8 100%);
-  border-top: 1px solid rgba(216, 224, 234, 0.65);
-  border-bottom: 1px solid rgba(216, 224, 234, 0.65);
+  background: linear-gradient(180deg, #f3eee5 0%, #ebe3d8 100%);
+  border-top: 1px solid rgba(215, 207, 193, 0.7);
+  border-bottom: 1px solid rgba(215, 207, 193, 0.7);
 }
 
 .section-heading {
@@ -120,23 +115,21 @@ a:hover {
 
 .section-heading h2 {
   margin: 0;
-  font-size: 1.85rem;
+  font-size: 1.9rem;
   line-height: 1.15;
   letter-spacing: -0.02em;
-  font-weight: 750;
-  color: #13202c;
+  font-weight: 760;
+  color: #1b1814;
 }
 
-/* Cards */
 .content-card {
-  background: rgba(255, 255, 255, 0.96);
+  background: rgba(255, 253, 249, 0.96);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
   padding: 1.5rem 1.6rem;
 }
 
-/* Prose */
 .prose p {
   margin: 0 0 1rem;
   color: var(--text-soft);
@@ -146,7 +139,6 @@ a:hover {
   margin-bottom: 0;
 }
 
-/* Experience / Education / Skills layout */
 .experience-grid,
 .education-grid,
 .skills-grid {
@@ -168,8 +160,8 @@ a:hover {
   font-size: 1.1rem;
   line-height: 1.25;
   letter-spacing: -0.015em;
-  font-weight: 750;
-  color: #102030;
+  font-weight: 760;
+  color: #1a1713;
 }
 
 .role {
@@ -196,33 +188,26 @@ a:hover {
   margin-top: 0.7rem;
 }
 
-/* Certifications */
 .cert-grid {
   max-width: var(--max-width);
   margin: 0 auto;
 }
 
 .cert-card {
-  margin: 0 0.4rem;
+  margin: 0 0.35rem;
   border-radius: var(--radius-md);
-  transition: transform 0.18s ease, opacity 0.18s ease, filter 0.18s ease;
+  transition: transform 0.18s ease, opacity 0.18s ease;
 }
 
 .cert-card:hover {
   transform: translateY(-2px);
-  opacity: 0.96;
+  opacity: 0.97;
 }
 
 .cert-card img {
-  filter: drop-shadow(0 8px 18px rgba(15, 23, 42, 0.08));
+  filter: drop-shadow(0 8px 16px rgba(31, 29, 25, 0.08));
 }
 
-/* Education cards slightly tighter */
-.education-grid .content-card p:last-child {
-  margin-bottom: 0;
-}
-
-/* Skills */
 .skill-card h3 {
   margin-bottom: 1rem;
 }
@@ -242,15 +227,14 @@ a:hover {
   min-height: 2rem;
   padding: 0.45rem 0.82rem;
   background: var(--accent-soft);
-  color: #21456d;
-  border: 1px solid #d7e4f7;
+  color: #5b3f31;
+  border: 1px solid #e2d1c4;
   border-radius: 999px;
   font-size: 0.92rem;
   font-weight: 650;
   line-height: 1.2;
 }
 
-/* Contact */
 .contact-card {
   text-align: center;
 }
@@ -264,19 +248,24 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.1rem;
-  margin: 1.35rem 0 0;
+  gap: 0.9rem;
+  margin: 1.2rem 0 0;
   flex-wrap: wrap;
 }
 
 .contact-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  background: var(--surface-muted);
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 40px !important;
+  height: 40px !important;
+  min-width: 40px !important;
+  min-height: 40px !important;
+  max-width: 40px !important;
+  max-height: 40px !important;
+  overflow: hidden !important;
+  border-radius: 10px;
+  background: var(--surface);
   border: 1px solid var(--border);
   box-shadow: var(--shadow-sm);
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
@@ -289,9 +278,16 @@ a:hover {
 }
 
 .contact-icon img {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
+  width: 18px !important;
+  height: 18px !important;
+  min-width: 18px !important;
+  min-height: 18px !important;
+  max-width: 18px !important;
+  max-height: 18px !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 !important;
+  flex: 0 0 18px !important;
 }
 
 .phone {
@@ -300,7 +296,6 @@ a:hover {
   font-weight: 700;
 }
 
-/* Subtle polish for linked company names */
 .card-header h3 a {
   color: inherit;
   border-bottom: 1px solid transparent;
@@ -308,13 +303,12 @@ a:hover {
 
 .card-header h3 a:hover {
   color: var(--accent);
-  border-bottom-color: rgba(31, 79, 143, 0.25);
+  border-bottom-color: rgba(106, 75, 58, 0.25);
 }
 
-/* Responsive */
 @media (max-width: 900px) {
   .hero {
-    padding: 4.5rem 0 3.4rem;
+    padding: 4.5rem 0 3.25rem;
   }
 
   .card-header {
@@ -337,11 +331,10 @@ a:hover {
 
   .content-card {
     padding: 1.2rem;
-    border-radius: 16px;
   }
 
   .hero h1 {
-    font-size: 2.55rem;
+    font-size: 2.65rem;
   }
 
   .hero-subtitle {
@@ -353,13 +346,22 @@ a:hover {
   }
 
   .contact-icon {
-    width: 40px;
-    height: 40px;
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    min-height: 36px !important;
+    max-width: 36px !important;
+    max-height: 36px !important;
   }
 
   .contact-icon img {
-    width: 18px;
-    height: 18px;
+    width: 16px !important;
+    height: 16px !important;
+    min-width: 16px !important;
+    min-height: 16px !important;
+    max-width: 16px !important;
+    max-height: 16px !important;
+    flex-basis: 16px !important;
   }
 }
 
